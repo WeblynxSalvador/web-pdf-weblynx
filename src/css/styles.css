@@ -44,10 +44,10 @@
   --color-indigo-800: #025a33;
   --color-indigo-900: #013d23;
 
-  --brand-green: #038d4f;
-  --brand-teal: #003142;
-  --brand-yellow: #fbbe2c;
-  --brand-accent: #00d197;
+  --brand-green: #1660a3;
+  --brand-teal: #0b3f70;
+  --brand-yellow: #78acdc;
+  --brand-accent: #0075c1;
 }
 
 @theme {
@@ -692,7 +692,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 .hp-body {
   margin: 0;
-  background-color: #04212a;
+  background-color: #061d2b;
   color: #e4efec;
   font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
 }
@@ -704,8 +704,8 @@ input[type='number']::-webkit-outer-spin-button {
 .hp-sidebar {
   width: 264px;
   flex-shrink: 0;
-  background-color: #052c38;
-  border-right: 1px solid #123f4a;
+  background-color: #073447;
+  border-right: 1px solid #15516a;
   display: flex;
   flex-direction: column;
   position: sticky;
@@ -716,18 +716,21 @@ input[type='number']::-webkit-outer-spin-button {
 .hp-brand {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.45rem;
   padding: 1.25rem 1.25rem 1rem;
   text-decoration: none;
-  border-bottom: 1px solid #123f4a;
+  border-bottom: 1px solid #15516a;
 }
 .hp-brand-logo {
-  height: 44px;
-  width: auto;
-  max-width: 168px;
+  display: block;
+  height: 48px;
+  width: 150px;
+  max-width: 150px;
+  flex: 0 0 150px;
+  object-fit: contain;
 }
 .hp-brand-pdf {
-  color: #fbbe2c;
+  color: #78acdc;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.06em;
@@ -773,11 +776,11 @@ input[type='number']::-webkit-outer-spin-button {
   color: #e4efec;
 }
 .hp-nav-item.is-active {
-  background-color: rgba(3, 141, 79, 0.16);
-  color: #39ac5e;
+  background-color: rgba(22, 96, 163, 0.25);
+  color: #78acdc;
 }
 .hp-nav-item.is-active i {
-  color: #14a581;
+  color: #78acdc;
 }
 .hp-nav-label {
   flex: 1;
@@ -785,13 +788,13 @@ input[type='number']::-webkit-outer-spin-button {
 .hp-nav-count {
   font-size: 0.72rem;
   color: #6f9a92;
-  background: #0a3644;
+  background: #0b4055;
   padding: 1px 8px;
   border-radius: 999px;
 }
 .hp-nav-item.is-active .hp-nav-count {
-  color: #39ac5e;
-  background: rgba(3, 141, 79, 0.22);
+  color: #78acdc;
+  background: rgba(22, 96, 163, 0.3);
 }
 .hp-somos {
   display: flex;
@@ -806,7 +809,7 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .hp-sidebar-foot {
   padding: 1rem 1.25rem;
-  border-top: 1px solid #123f4a;
+  border-top: 1px solid #15516a;
   font-size: 0.72rem;
   color: #6f9a92;
 }

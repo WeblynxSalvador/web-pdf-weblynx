@@ -1,4 +1,4 @@
-<h1 align="center">Coopanest PDF</h1>
+<h1 align="center">Weblynx PDF</h1>
 
 <p align="center">
   <b>Mais de 100 ferramentas de PDF — gratuitas e 100% no seu navegador.</b><br>
@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://pdf.coopanest-ce.com.br"><b>▶️ Acessar agora — pdf.coopanest-ce.com.br</b></a>
+  <a href="https://pdf.weblynx.com.br"><b>▶️ Acessar agora — pdf.weblynx.com.br</b></a>
 </p>
 
 <p align="center">
@@ -18,22 +18,22 @@
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/home-desktop.png" alt="Tela inicial do Coopanest PDF — grade de ferramentas de PDF" width="100%">
+  <img src="docs/screenshots/home-desktop.png" alt="Tela inicial do Weblynx PDF — grade de ferramentas de PDF" width="100%">
 </p>
 
 ---
 
 ## 📣 Disponível gratuitamente para todos
 
-A **Coopanest-CE** disponibiliza, sem qualquer custo, uma central completa de ferramentas de PDF:
+A **Weblynx** disponibiliza, sem qualquer custo, uma central completa de ferramentas de PDF:
 
-### 👉 [**pdf.coopanest-ce.com.br**](https://pdf.coopanest-ce.com.br)
+### 👉 [**pdf.weblynx.com.br**](https://pdf.weblynx.com.br)
 
 **Sem cadastro. Sem instalação. Sem limite de uso.** Basta abrir o link no navegador (computador ou celular) e usar.
 
 > ### 🔒 Os seus arquivos ficam com você
 >
-> O Coopanest PDF processa **tudo dentro do seu navegador**. Nenhum documento é **enviado**, **copiado** ou **armazenado** em servidores — nem da Coopanest, nem de terceiros. Quando você fecha a aba, não sobra nada em lugar nenhum. É a mesma privacidade de um programa instalado no seu computador, só que sem instalar nada.
+> O Weblynx PDF processa **tudo dentro do seu navegador**. Nenhum documento é **enviado**, **copiado** ou **armazenado** em servidores. Quando você fecha a aba, não sobra nada em lugar nenhum.
 
 ---
 
@@ -84,20 +84,20 @@ Também há **OCR** (reconhecimento de texto em documentos escaneados) em portug
 
 **Este repositório existe para que a cooperativa possa deixar o sistema com a sua própria cara** — cores, logo e identidade visual próprios — caso deseje hospedar a sua versão.
 
-> **Só quer usar as ferramentas?** Você não precisa de nada disto — é só acessar **[pdf.coopanest-ce.com.br](https://pdf.coopanest-ce.com.br)**. Este código é destinado a quem vai **customizar e hospedar** o sistema.
+> **Só quer usar as ferramentas?** Você não precisa de nada disto — é só acessar **[pdf.weblynx.com.br](https://pdf.weblynx.com.br)**. Este código é destinado a quem vai **customizar e hospedar** o sistema.
 
 O que dá para personalizar via variáveis de build (sem mexer no código):
 
-| Variável                | O que faz                             |
-| ----------------------- | ------------------------------------- |
-| `VITE_BRAND_NAME`       | Nome exibido (ex.: `"Coopanest PDF"`) |
-| `VITE_BRAND_LOGO`       | Caminho do logo/símbolo               |
-| `VITE_FOOTER_TEXT`      | Texto do rodapé                       |
-| `VITE_DEFAULT_LANGUAGE` | Idioma padrão (`pt`)                  |
-| `DISABLE_TOOLS`         | Lista de ferramentas a ocultar        |
-| `SITE_URL`              | Domínio de produção                   |
+| Variável                | O que faz                           |
+| ----------------------- | ----------------------------------- |
+| `VITE_BRAND_NAME`       | Nome exibido (ex.: `"Weblynx PDF"`) |
+| `VITE_BRAND_LOGO`       | Caminho do logo/símbolo             |
+| `VITE_FOOTER_TEXT`      | Texto do rodapé                     |
+| `VITE_DEFAULT_LANGUAGE` | Idioma padrão (`pt`)                |
+| `DISABLE_TOOLS`         | Lista de ferramentas a ocultar      |
+| `SITE_URL`              | Domínio de produção                 |
 
-As **cores** ficam em [`src/css/styles.css`](src/css/styles.css) (paleta verde/amarelo/teal da Coopanest) e os **logos/favicons** em [`public/images/`](public/images/). Trocando esses arquivos e as variáveis acima, o sistema assume outra identidade visual.
+As **cores** ficam em [`src/css/styles.css`](src/css/styles.css) e os **logos/favicons** em [`public/images/`](public/images/). Trocando esses arquivos e as variáveis acima, o sistema assume outra identidade visual.
 
 ### Rodar localmente
 
@@ -136,7 +136,7 @@ Essa arquitetura é o que garante a promessa central: **os documentos nunca deix
 Copie e cole (WhatsApp, e-mail, redes):
 
 ```text
-📄 A Coopanest-CE tem uma central de ferramentas de PDF — GRATUITA!
+📄 A Weblynx tem uma central de ferramentas de PDF — GRATUITA!
 
 Mesclar, dividir, comprimir, converter, assinar, OCR e muito mais,
 em um só lugar e sem custo nenhum.
@@ -155,6 +155,6 @@ Sem cadastro, sem instalação, sem limite. Funciona no celular também.
 
 Distribuído sob a **[AGPL-3.0](LICENSE)**.
 
-O Coopanest PDF é um trabalho derivado do **[BentoPDF](https://github.com/alam00000/bentopdf)** (também AGPL-3.0), com interface em português, identidade visual da Coopanest-CE e configuração para operação com origem própria. Nosso agradecimento ao projeto e à comunidade originais.
+O Coopanest PDF é um trabalho derivado do **[BentoPDF](https://github.com/alam00000/bentopdf)** (também AGPL-3.0), com interface em português, identidade visual da Weblynx e configuração para operação com origem própria. Nosso agradecimento ao projeto e à comunidade originais.
 
-<p align="center"><sub>Desenvolvido com ❤️ pela <a href="https://headers.com.br">Headers</a> para a Coopanest-CE · O selo <b>SomosCoop</b> é marca do Sistema OCB.</sub></p>
+<p align="center"><sub>Weblynx PDF — baseado no BentoPDF (AGPL-3.0) · Projeto originalmente disponibilizado pela <a href="https://headers.com.br">Headers</a> · O selo <b>SomosCoop</b> é marca do Sistema OCB.</sub></p>

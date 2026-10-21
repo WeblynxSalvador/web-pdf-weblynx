@@ -36,6 +36,9 @@ const SUPPORTED_LANGUAGES = [
   'uk',
   'sk',
 ] as const;
+// Weblynx PDF uses the tool dashboard as the default entry point. Set
+// SIMPLE_MODE=false when the marketing-oriented homepage is needed.
+const SIMPLE_MODE = process.env.SIMPLE_MODE !== 'false';
 const LANG_REGEX = new RegExp(
   `^/(${SUPPORTED_LANGUAGES.join('|')})(?:/(.*))?$`
 );
@@ -352,6 +355,16 @@ function languageRouterPlugin(): Plugin {
   return {
     name: 'language-router',
     configureServer(server) {
+      // Keep the development server consistent with the production build:
+      // Weblynx PDF uses the tools dashboard as the default entry point.
+      if (SIMPLE_MODE) {
+        server.middlewares.use((req, _res, next) => {
+          if (req.url === '/' || req.url === '/index.html') {
+            req.url = '/simple-index.html';
+          }
+          next();
+        });
+      }
       server.middlewares.use(createCorsProxyMiddleware());
       server.middlewares.use(createLanguageMiddleware(true));
     },
@@ -381,7 +394,7 @@ function flattenPagesPlugin(): Plugin {
         }
       }
 
-      if (process.env.SIMPLE_MODE === 'true' && bundle['simple-index.html']) {
+      if (SIMPLE_MODE && bundle['simple-index.html']) {
         moves.push({ from: 'simple-index.html', to: 'index.html' });
       }
 
@@ -474,7 +487,7 @@ export default defineConfig(() => {
         partialDirectory: resolve(__dirname, 'src/partials'),
         context: {
           baseUrl: (process.env.BASE_URL || '/').replace(/\/?$/, '/'),
-          simpleMode: process.env.SIMPLE_MODE === 'true',
+          simpleMode: SIMPLE_MODE,
           brandName: process.env.VITE_BRAND_NAME || '',
           brandLogo: process.env.VITE_BRAND_LOGO || '',
           footerText: process.env.VITE_FOOTER_TEXT || '',
@@ -519,7 +532,7 @@ export default defineConfig(() => {
       }),
     ],
     define: {
-      __SIMPLE_MODE__: JSON.stringify(process.env.SIMPLE_MODE === 'true'),
+      __SIMPLE_MODE__: JSON.stringify(SIMPLE_MODE),
       __BRAND_NAME__: JSON.stringify(process.env.VITE_BRAND_NAME || ''),
       __DISABLED_TOOLS__: JSON.stringify(
         (process.env.DISABLE_TOOLS || '')
@@ -556,10 +569,9 @@ export default defineConfig(() => {
     build: {
       rollupOptions: {
         input: {
-          main:
-            process.env.SIMPLE_MODE === 'true'
-              ? resolve(__dirname, 'simple-index.html')
-              : resolve(__dirname, 'index.html'),
+          main: SIMPLE_MODE
+            ? resolve(__dirname, 'simple-index.html')
+            : resolve(__dirname, 'index.html'),
           about: resolve(__dirname, 'about.html'),
           contact: resolve(__dirname, 'contact.html'),
           faq: resolve(__dirname, 'faq.html'),

@@ -84,7 +84,7 @@ if (isDevelopment) {
 
                 if (
                   confirm(
-                    'A new version of BentoPDF is available. Reload to update?'
+                    'Uma nova versão do Weblynx PDF está disponível. Recarregar agora?'
                   )
                 ) {
                   newWorker.postMessage({ type: 'SKIP_WAITING' });

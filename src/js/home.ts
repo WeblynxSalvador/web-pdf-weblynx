@@ -13,7 +13,7 @@ const ALL = '__all__';
 
 const categoryIcons: Record<string, string> = {
   __all__: 'ph-squares-four',
-  'Favoritos da COOPANEST': 'ph-heart',
+  'Favoritos da Weblynx': 'ph-heart',
   'Popular Tools': 'ph-star',
   'Edit & Annotate': 'ph-pencil-simple',
   'Convert to PDF': 'ph-tray-arrow-down',
@@ -132,7 +132,7 @@ const render = (): void => {
 
   createIcons({ icons });
 
-  const FAVORITES = 'Favoritos da COOPANEST';
+  const FAVORITES = 'Favoritos da Weblynx';
   const hasFavorites = !!nav.querySelector(
     `.hp-nav-item[data-cat="${FAVORITES}"]`
   );

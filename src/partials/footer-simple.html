@@ -5,16 +5,25 @@
         <div class="flex items-center mb-2">
           <img
             id="footer-logo"
-            src="{{baseUrl}}{{#if brandLogo}}{{brandLogo}}{{else}}images/favicon.svg{{/if}}"
-            alt="{{#if brandName}}{{brandName}}{{else}}Coopanest PDF{{/if}} Logo"
-            class="h-8 w-8 mr-2"
+            src="{{baseUrl}}{{#if brandLogo}}{{brandLogo}}{{else}}images/weblynx-logo.png{{/if}}"
+            alt="{{#if brandName}}{{brandName}}{{else}}Weblynx PDF{{/if}} Logo"
+            class="h-8 w-auto max-w-[150px] mr-2 object-contain"
           />
           <span id="footer-brand" class="text-white font-bold text-lg"
-            >{{#if brandName}}{{brandName}}{{else}}Coopanest PDF{{/if}}</span
+            >PDF</span
           >
         </div>
         <p id="footer-copyright" class="text-gray-400 text-sm">
-          Desenvolvido com <span aria-label="amor">&#10084;&#65039;</span> pela
+          Weblynx PDF — baseado no
+          <a
+            href="https://github.com/WeblynxSalvador/web-pdf-weblynx"
+            target="_blank"
+            rel="noopener"
+            class="underline hover:text-gray-400"
+            >BentoPDF</a
+          >
+          (AGPL-3.0)<br />
+          Projeto originalmente disponibilizado pela
           <a
             href="https://headers.com.br"
             target="_blank"
@@ -22,14 +31,13 @@
             class="text-emerald-400 hover:underline"
             >Headers</a
           >
-          para Coopanest-CE
         </p>
         <p class="text-gray-500 text-xs mt-2">
           <span data-i18n="footer.version">Version</span>
           <span id="app-version">{{appVersion}}</span>
           &middot; Baseado no
           <a
-            href="https://github.com/alam00000/bentopdf"
+            href="https://github.com/WeblynxSalvador/web-pdf-weblynx"
             target="_blank"
             rel="noopener"
             class="underline hover:text-gray-400"

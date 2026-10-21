@@ -12,7 +12,7 @@ const SITE_URL = (process.env.SITE_URL || 'https://www.bentopdf.com').replace(
   /\/+$/,
   ''
 );
-const BRAND_NAME = process.env.VITE_BRAND_NAME || 'BentoPDF';
+const BRAND_NAME = process.env.VITE_BRAND_NAME || 'Weblynx PDF';
 const BASE_PATH = (process.env.BASE_URL || '/').replace(/\/$/, '');
 
 const ORGANIZATION_LD_MARKER = 'data-bentopdf-organization';
