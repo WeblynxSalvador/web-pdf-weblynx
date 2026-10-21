@@ -2200,7 +2200,7 @@ downloadBtn.addEventListener('click', async () => {
 
     // Set document metadata for accessibility
     pdfDoc.setTitle('Formulário preenchível');
-    pdfDoc.setAuthor('Coopanest PDF');
+    pdfDoc.setAuthor('Weblynx PDF');
     pdfDoc.setLanguage('en-US');
 
     const radioGroups = new Map<

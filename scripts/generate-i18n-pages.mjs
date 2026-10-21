@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 const DIST_DIR = path.resolve(__dirname, '../dist');
 const LOCALES_DIR = path.resolve(__dirname, '../public/locales');
-const SITE_URL = (process.env.SITE_URL || 'https://www.bentopdf.com').replace(
+const SITE_URL = (process.env.SITE_URL || 'https://pdf.weblynx.com.br').replace(
   /\/+$/,
   ''
 );
@@ -84,7 +84,7 @@ function injectOrganizationLd(document) {
     '@type': 'Organization',
     name: BRAND_NAME,
     url: SITE_URL,
-    logo: `${SITE_URL}/images/favicon.svg`,
+    logo: `${SITE_URL}/images/weblynx-favicon.ico`,
   };
 
   const script = document.createElement('script');
