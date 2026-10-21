@@ -144,7 +144,7 @@ em um só lugar e sem custo nenhum.
 🔒 Seguro de verdade: seus arquivos NÃO são enviados para nenhum
 servidor. Tudo acontece dentro do seu navegador, no seu dispositivo.
 
-👉 Acesse: https://pdf.coopanest-ce.com.br
+👉 Acesse: https://pdf.weblynx.com.br
 
 Sem cadastro, sem instalação, sem limite. Funciona no celular também.
 ```
@@ -155,6 +155,6 @@ Sem cadastro, sem instalação, sem limite. Funciona no celular também.
 
 Distribuído sob a **[AGPL-3.0](LICENSE)**.
 
-O Coopanest PDF é um trabalho derivado do **[BentoPDF](https://github.com/alam00000/bentopdf)** (também AGPL-3.0), com interface em português, identidade visual da Weblynx e configuração para operação com origem própria. Nosso agradecimento ao projeto e à comunidade originais.
+O Weblynx PDF é um trabalho derivado do **[BentoPDF](https://github.com/alam00000/bentopdf)** (também AGPL-3.0), com interface em português, identidade visual da Weblynx e configuração para operação com origem própria. Nosso agradecimento ao projeto e à comunidade originais.
 
 <p align="center"><sub>Weblynx PDF — baseado no BentoPDF (AGPL-3.0) · Projeto originalmente disponibilizado pela <a href="https://headers.com.br">Headers</a> · O selo <b>SomosCoop</b> é marca do Sistema OCB.</sub></p>

@@ -89,7 +89,7 @@ function buildUnsupportedLanguageMessage(
   const availableText = formatTesseractLanguageList(availableLanguages);
 
   return [
-    `Esta versão do BentoPDF inclui dados de OCR apenas para ${availableText}.`,
+    `Esta versão do Weblynx PDF inclui dados de OCR apenas para ${availableText}.`,
     `O idioma de OCR solicitado não está disponível: ${unavailableText}.`,
     'Escolha um dos idiomas incluídos ou reconstrua o pacote air-gapped adicionando o idioma ausente em --ocr-languages.',
   ].join(' ');

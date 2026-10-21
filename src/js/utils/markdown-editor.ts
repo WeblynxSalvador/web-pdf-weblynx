@@ -75,7 +75,7 @@ export interface MarkdownEditorOptions {
 
 export type { MarkdownItOptions } from '@/types';
 
-const DEFAULT_MARKDOWN = `# Welcome to BentoPDF Markdown Editor
+const DEFAULT_MARKDOWN = `# Welcome to Weblynx PDF Markdown Editor
 
 This is a **live preview** markdown editor with full plugin support.
 
@@ -85,7 +85,7 @@ This is a **live preview** markdown editor with full plugin support.
 
 - **Bold** and *italic* text
 - ~~Strikethrough~~ text
-- [Links](https://bentopdf.com)
+- [Links](https://pdf.weblynx.com.br)
 - ==Highlighted text== using mark
 - ++Inserted text++ using ins
 - H~2~O for subscript
@@ -145,12 +145,12 @@ graph TD
 \`\`\`mermaid
 sequenceDiagram
     participant User
-    participant BentoPDF
+    participant Weblynx PDF
     participant Server
-    User->>BentoPDF: Upload PDF
-    BentoPDF->>BentoPDF: Process locally
-    BentoPDF-->>User: Download result
-    Note over BentoPDF: No server needed!
+    User->>Weblynx PDF: Upload PDF
+    Weblynx PDF->>Weblynx PDF: Process locally
+    Weblynx PDF-->>User: Download result
+    Note over Weblynx PDF: No server needed!
 \`\`\`
 
 ### Pie Chart
@@ -218,7 +218,7 @@ erDiagram
 
 \`\`\`mermaid
 mindmap
-    root((BentoPDF))
+    root((Weblynx PDF))
         Convert
             Word to PDF
             Excel to PDF

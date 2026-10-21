@@ -1,29 +1,29 @@
 {
-    "name": "Coopanest PDF",
-    "short_name": "Coopanest PDF",
-    "description": "Ferramentas de PDF da Coopanest-CE - privadas e 100% no seu navegador. Baseado no BentoPDF.",
+    "name": "Weblynx PDF",
+    "short_name": "Weblynx PDF",
+    "description": "Ferramentas de PDF da Weblynx - privadas e 100% no seu navegador. Baseado no BentoPDF.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#003142",
-    "theme_color": "#038d4f",
+    "theme_color": "#1660a3",
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "/images/favicon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png",
+            "src": "/images/weblynx-favicon.ico",
+            "sizes": "32x32",
+            "type": "image/x-icon",
             "purpose": "maskable any"
         },
         {
-            "src": "/images/favicon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
+            "src": "/images/weblynx-favicon.ico",
+            "sizes": "32x32",
+            "type": "image/x-icon",
             "purpose": "maskable any"
         },
         {
-            "src": "/images/apple-touch-icon.png",
-            "sizes": "180x180",
-            "type": "image/png",
+            "src": "/images/weblynx-favicon.ico",
+            "sizes": "32x32",
+            "type": "image/x-icon",
             "purpose": "any"
         }
     ],
